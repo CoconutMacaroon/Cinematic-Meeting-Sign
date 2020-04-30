@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Tell me about an issue
+about: Report an issue
 title: ''
 labels: bug, needs-reproduction
 assignees: ''
