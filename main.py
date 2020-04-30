@@ -13,7 +13,7 @@ while True:
     window_title = str(GetWindowText(GetForegroundWindow()))
     # does window title contain "Microsoft Teams" or match "Zoom Meeting ID: xxx-xxx-xxx"*
     # *This was un-regex-ified for simplicity, but it acctually uses regex
-    if("Microsoft Teams" in window_title):
+    if("Microsoft Teams" in window_title) or ("Zoom" in window_title) or ("Skype" in window_title) or ("Google Hangouts" in window_title):
         ser.write(b"1")
     else:
         ser.write(b"0")
